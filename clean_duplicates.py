@@ -1,7 +1,15 @@
 import pandas as pd
 
-input_file = r"c:\Users\HP\Desktop\data haraka\Rslt_Mvt_Enseignant_Prim2025.xlsx"
-output_file = r"c:\Users\HP\Desktop\data haraka\Rslt_Mvt_Enseignant_Prim2025_cleaned.xlsx"
+# for run
+# "C:/Users/HP/Desktop/data haraka/.venv/Scripts/python.exe" "C:/Users/HP/Desktop/data haraka/clean_duplicates.py"
+
+# input_file = r"c:\Users\HP\Desktop\data haraka\Rslt_Mvt_Enseignant_Prim2025.xlsx"
+# output_file = r"c:\Users\HP\Desktop\data haraka\Rslt_Mvt_Enseignant_Prim2025_cleaned.xlsx"
+
+
+input_file = r"c:\Users\HP\Desktop\data haraka\haraka2024.xlsx"
+output_file = r"c:\Users\HP\Desktop\data haraka\haraka2024.xlsx"
+
 
 def fix_garbled_text(text):
 	# Mapping based on your example; add more pairs as you discover them.
@@ -52,7 +60,7 @@ def fix_garbled_text(text):
 		'Σ': 'ح',
 		' ': ' ',
 		'έ': 'ر',
-		'ϳ': 'ي',
+		'p': 'ي',
 		'Ϙ': 'ق',
 		'ϓ': 'ف',
 		'ϕ': 'ق',
@@ -60,7 +68,7 @@ def fix_garbled_text(text):
 		'ϱ': 'ي',
 		'ϗ': 'ق',
 		'΃': 'أ',
-		'اϷ': 'الأ',
+		'اϷ': 'لأ',
 		'ϐ': 'غ',
 		'ϼ': 'لا',
 		'α': 'س',
@@ -69,7 +77,6 @@ def fix_garbled_text(text):
         ':': 'غ',
 		'Ϋ': 'ذ',
 		'ϖ': 'ق',
-		' ': ' ',
 		' ': ' ',
 		
     
